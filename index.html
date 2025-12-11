@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>You: Soft Reminders – Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg-top: #c9b6e4;
+      --bg-bottom: #616b80;
+      --card-bg: rgba(255, 255, 255, 0.12);
+      --card-border: rgba(255, 255, 255, 0.3);
+      --text-main: #ffffff;
+      --text-soft: #e7e7f5;
+      --accent: #ffffff;
+      --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        system-ui, -system-ui, "Segoe UI", sans-serif;
+      background: linear-gradient(to bottom, var(--bg-top), var(--bg-bottom));
+      color: var(--text-main);
+    }
+
+    .card {
+      width: 100%;
+      max-width: 520px;
+      padding: 28px 26px 30px;
+      border-radius: 24px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(20px);
+    }
+
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    h1 {
+      font-size: 26px;
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: var(--text-soft);
+      margin-bottom: 22px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: var(--text-soft);
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .email-box {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      background: rgba(0, 0, 0, 0.18);
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      word-break: break-all;
+    }
+
+    .email-label {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 11px;
+      opacity: 0.8;
+    }
+
+    .email-value {
+      font-weight: 600;
+    }
+
+    .footer-note {
+      margin-top: 18px;
+      font-size: 12px;
+      color: var(--text-soft);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo-mark">
+      you
+    </div>
+
+    <h1>You: Soft Reminders support</h1>
+    <p class="subtitle">
+      A calm place to get help with your gentle affirmation app.
+    </p>
+
+    <p class="section-title">How to reach me</p>
+    <p>
+      Thanks for using <strong>You: Soft Reminders</strong>. If you need help,
+      found a bug, or want to suggest a new feature, I would love to hear
+      from you.
+    </p>
+
+    <div class="email-box">
+      <span class="email-label">Support</span>
+      <span class="email-value">jeff.monson@mac.com</span>
+    </div>
+
+    <p class="footer-note">
+      I do my best to respond as quickly as possible. Please include your
+      device model and iOS version if you are reporting an issue.
+    </p>
+  </main>
+</body>
+</html>
