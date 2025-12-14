@@ -45,20 +45,23 @@
       backdrop-filter: blur(20px);
     }
 
-    .logo-mark {
-      width: 48px;
-      height: 48px;
+  .logo-mark {
+      width: 56px;
+      height: 56px;
       border-radius: 16px;
-      border: 2px solid rgba(255, 255, 255, 0.75);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden;
       margin-bottom: 16px;
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--accent);
-      line-height: 1;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
     }
+    
+    .logo-mark img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transform: scale(2.50) translateY(2px);
+      transform-origin: center;
+    }  
 
 
     h1 {
