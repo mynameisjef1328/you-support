@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Privacy Policy – You: Daily Affirmations</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     :root {
       --bg-top: #c9b6e4;
@@ -45,18 +46,18 @@
       backdrop-filter: blur(20px);
     }
 
-  .logo-mark {
+    .logo-mark {
       width: 56px;
       height: 56px;
       border-radius: 16px;
       overflow: hidden;
       margin-bottom: 16px;
-      box-shadow: 
+      box-shadow:
         0 12px 32px rgba(0, 0, 0, 0.28),
         0 4px 10px rgba(0, 0, 0, 0.18);
-        border: 1px solid rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.14);
     }
-    
+
     .logo-mark img {
       width: 100%;
       height: 100%;
@@ -64,8 +65,7 @@
       object-fit: cover;
       transform: scale(2.50) translateY(2px);
       transform-origin: center;
-    }  
-
+    }
 
     h1 {
       font-size: 24px;
@@ -101,22 +101,38 @@
       line-height: 1.6;
     }
 
-    .footer-link {
-      margin-top: 18px;
-      font-size: 12px;
-    }
-
     a {
       color: var(--accent);
       text-decoration: underline;
     }
+
+    /* NEW: Pardle-style footer */
+    .legal-footer {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      text-align: center;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .legal-footer a {
+      color: rgba(255, 255, 255, 0.90);
+      text-decoration: underline;
+    }
+
+    .legal-footer .copy {
+      opacity: 0.9;
+    }
   </style>
 </head>
+
 <body>
   <main class="card">
     <div class="logo-mark">
-  <img src="images/you-app-icon.PNG" alt="You app icon">
-</div>
+      <img src="images/you-app-icon.PNG" alt="You app icon">
+    </div>
 
     <h1>Privacy Policy</h1>
     <p class="subtitle">
@@ -166,12 +182,18 @@
       If you have any questions about this privacy policy or the app, please contact:
     </p>
     <p>
-      <strong>Email:</strong> support_you@icloud.com
+      <strong>Email:</strong> <a href="mailto:support_you@icloud.com">support_you@icloud.com</a>
     </p>
 
-    <p class="footer-link">
-      Back to <a href="index.html">support page</a>
-    </p>
+    <!-- NEW: Footer links + copyright -->
+    <div class="legal-footer">
+      <div>
+        <a href="privacy.html">Privacy Policy</a>
+        <span> | </span>
+        <a href="support.html">Support</a>
+      </div>
+      <div class="copy">© 2026 You. All rights reserved.</div>
+    </div>
   </main>
 </body>
 </html>
